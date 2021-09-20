@@ -1,5 +1,5 @@
 # React Intermediate Challenges
-This challenges are part of the candidates selections for the React beginners Bootcamp.
+This challenges are part of the candidates selections for the React intermidiate - advanced Bootcamp.
 
 ## Instructions
 This is a mono repository which contains all the challenges that you have to accomplish. Please follow the next instructions.
