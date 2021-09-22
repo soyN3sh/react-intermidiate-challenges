@@ -40,8 +40,8 @@ We suggest you to use React Router for navigation and React Context/Redux for gl
 - When the user is authenticated, enters on notes page and there are not notes yet, the app should shows a message "There are no notes, please create a new one using the creation note input".
 - When the user is authenticated, enters on notes page, type text on the creation note input and clicks on "close" button, then the app should create the new note with the text content and selected color, and display it on the notes page.
 - When the user is authenticated, enters on notes page, have at least one note, modifies the text content and color of one note and clicks on save, then the app should update only the note selected with the text content and color selected.
-- When the user is authenticated, enters on notes page, have at least 5 notes with text content, and types in the search input with text, then the app should shows only the notes that match with the search.
-- When the user is authenticated, enters on notes page, have at least 5 notes with text content, and types in the search input with text that does not match with no note, then the app should shows a message "There are no match results. Try another search."
+- When the user is authenticated, enters on notes page, have at least 1 note with text content, and types in the search input with text, then the app should shows only the notes that match with the search.
+- When the user is authenticated, enters on notes page, have at least 1 note with text content, and types in the search input with text that does not match with no note, then the app should shows a message "There are no match results. Try another search."
 - When the user is authenticated, enters on archive page and there are not archive notes yet, then the app should shows the message "You don't have archived notes".
 - When the user is authenticated, enters on notes page, have at least one note, and clicks on archive note, then the app should move the note selected to the archives page and should not be longer displayed on notes page.
 
