@@ -27,7 +27,8 @@ Please read the following requisites in order to complete this challenge.
 - **You have to use React Testing Library and Jest tools in order to complete the tests.**
 - **Use functional components and React Hooks as possible.**
 
-**Notes**
+**Notes:**
+
 We suggest you to use React Router for navigation and React Context/Redux for global state managment.
 
 ## Acceptance Criterias (AC)
@@ -44,11 +45,16 @@ We suggest you to use React Router for navigation and React Context/Redux for gl
 - When the user is authenticated, enters on archive page and there are not archive notes yet, then the app should shows the message "You don't have archived notes".
 - When the user is authenticated, enters on notes page, have at least one note, and clicks on archive note, then the app should move the note selected to the archives page and should not be longer displayed on notes page.
 
+### Notes
+
+In order to complete some AC, you will need to use persist data.
+
+We recommend you to use **Local Storage** for that.
 
 ## Score
 
 - Authentication validations for access to private routes: `10`.
-- Authentication via Email/Password: `10`.
+- Authentication via Email/Password (without real backend service): `10`.
 - Navigation routing through different views: `10`.
 - Create new note with text and color: `10`.
 - Update a current note with text and color: `10`.
@@ -62,13 +68,14 @@ We suggest you to use React Router for navigation and React Context/Redux for gl
 
 The bonus are a plus that help us to know you better and increments your final score.
 
+- Authentication with real backend (like Firebase, Auth0, etc): `40`.
 - Add tests for update a note through the notes page UI: `10`.
 - Add tests for archive a note through the notes page UI: `10`.
 - Add a 404 page: `10`.
 - Add a test for 404 page: `10`.
 - Add Dark mode: `20`.
 - The app is responsive: `20`.
-- The app use a backend service (like Firebase): `50`.
+- Persist data using a real backend service (like Firebase, etc): `50`.
 
 ## Questions?
 
