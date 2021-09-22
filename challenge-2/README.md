@@ -6,7 +6,7 @@ For this challenge you will create an awesome React App which fetch the "Picture
 
 On this time you will create an app from scratch, and the UI design is up to you considering the best UX experience.
 
-We recommend you to consider the next elements that should contain the app:
+We recommend you to consider the next elements that should contain the app, this are optional:
 
 - Title
 - Date picker
@@ -29,8 +29,8 @@ Please read the following requisites in order to complete this challenge.
 
 ## Acceptance Criteria (AC)
 
-- When the user enters on the app, the app should shows the picture of the day including the thumbs.
-- When the user selects a specific date with the format YYYY-MM-DD and clicks on `show` button, the app should show the picture of the day for the given date.
+- When the user enters on the app, the app should shows the picture of the day.
+- When the user selects a specific date with the format YYYY-MM-DD, then the app should show the picture of the day for the given date.
 - The app should be responsive.
 - When the app fetch the API and there is an unexpected error, the app should shows a message "There was an error, please try again".
 - When the user selects a invalid date value and clicks on `show` button, the app should show a message error from the api response.
