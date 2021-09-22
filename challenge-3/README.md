@@ -27,6 +27,9 @@ Please read the following requisites in order to complete this challenge.
 - **You have to use React Testing Library and Jest tools in order to complete the tests.**
 - **Use functional components and React Hooks as possible.**
 
+**Notes**
+We suggest you to use React Router for navigation and React Context/Redux for global state managment.
+
 ## Acceptance Criterias (AC)
 
 - When the user is not authenticated and enters on the app, the app should redirect always to the login page.
