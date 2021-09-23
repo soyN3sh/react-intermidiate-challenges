@@ -1,58 +1,81 @@
-# React Intermediate Challenge 2 - Styles, Fetching API, Testing.
+# React Intermediate Challenge 3 - Auth, Routing and Global state managment.
 
-For this challenge you will create an awesome React App which fetch the "Picture of the day" from the NASA open API `APOD`.
+For this challenge you will create a SPA with Authentication and use of a global state managment.
+
+The app will consist in a clone of [Google keep app](https://keep.google.com/u/0/).
+
+The app allows you to create diferent kind of notes and keep them on the site.
+
+We are not going to clone 100% the app.
+
+Just focus on the next features:
+
+- Access only via authentication using Email/Password.
+- Create a new note through a form with **only plain text and color**.
+- You can update the content and the color of note.
+- You can search a note via search input.
+- You can archive a note.
+- You can navigate through login page, notes page and archive page.
 
 ## Instructions
 
-On this time you will create an app from scratch, and the UI design is up to you considering the best UX experience.
-
-We recommend you to consider the next elements that should contain the app, this are optional:
-
-- Title
-- Date picker
-- Main section with the image
-
 Please read the following requisites in order to complete this challenge.
 
-- Create a new branch with name `challenge-2` from this repository.
-- Use Create React App.
+- Create a new branch with name `challenge-3` from this repository.
 - Complete all the Acceptance Criterias.
-- Don't use UI Libraries. You have to build your own styles. Styled components, SASS, LESS, CSS, etc are allowed, you are free to use the approach that makes sense to you.
-- You have to fetch API Calls from the NASA `APOD` using your API KEY.
-- Publish your app using free services like Github pages, Netflify, Heroku, etc, and **share the URL on the PR.**
-- **You have to use React Testing Library and Jest tools in order to add tests.**
+- No UI libraries.
+- **You have to use React Testing Library and Jest tools in order to complete the tests.**
 - **Use functional components and React Hooks as possible.**
 
-## Resources.
+**Notes:**
 
-- [NASA open apis](https://api.nasa.gov/).
+We suggest you to use React Router for navigation and React Context/Redux for global state managment.
 
-## Acceptance Criteria (AC)
+## Acceptance Criterias (AC)
 
-- When the user enters on the app, the app should shows the picture of the day.
-- When the user selects a specific date with the format YYYY-MM-DD, then the app should show the picture of the day for the given date.
-- The app should be responsive.
-- When the app fetch the API and there is an unexpected error, the app should shows a message "There was an error, please try again".
-- When the user selects a invalid date value and clicks on `show` button, the app should show a message error from the api response.
+- When the user is not authenticated and enters on the app, the app should redirect always to the login page.
+- When the user is not authenticated and enters on the login page, the app should display a Login form with email and password inputs and a submit button.
+- When the user is not authenticated, enters on the login page and types incorrect Email/Password credentials, the app should shows the error message "Email or password are not correct".
+- When the user is not authenticated, enters on the login page and fills the login form with valid credentials, then the app should redirect to the Notes page.
+- When the user is authenticated, enters on notes page and there are not notes yet, the app should shows a message "There are no notes, please create a new one using the creation note input".
+- When the user is authenticated, enters on notes page, type text on the creation note input and clicks on "close" button, then the app should create the new note with the text content and selected color, and display it on the notes page.
+- When the user is authenticated, enters on notes page, have at least one note, modifies the text content and color of one note and clicks on save, then the app should update only the note selected with the text content and color selected.
+- When the user is authenticated, enters on notes page, have at least 1 note with text content, and types in the search input with text, then the app should shows only the notes that match with the search.
+- When the user is authenticated, enters on notes page, have at least 1 note with text content, and types in the search input with text that does not match with no note, then the app should shows a message "There are no match results. Try another search."
+- When the user is authenticated, enters on archive page and there are not archive notes yet, then the app should shows the message "You don't have archived notes".
+- When the user is authenticated, enters on notes page, have at least one note, and clicks on archive note, then the app should move the note selected to the archives page and should not be longer displayed on notes page.
+
+### Notes
+
+In order to complete some AC, you will need to use persist data.
+
+We recommend you to use **Local Storage** for that.
 
 ## Score
 
-- First AC completed: `10`.
-- Automated Test for first AC: `10`
-- Second AC completed `20`.
-- Third AC completed `20`.
-- Fourth AC completed `20`.
-- Fifth AC completed `20`.
+- Authentication validations for access to private routes: `10`.
+- Authentication via Email/Password (without real backend service): `10`.
+- Navigation routing through different views: `10`.
+- Create new note with text and color: `10`.
+- Update a current note with text and color: `10`.
+- Search notes: `10`.
+- Archive notes: `10`.
+- Tests for private routes: `10`.
+- Tests for login page UI using valid and invalid credentail cases: `10`.
+- Tests for notes page UI doing the creation of a new note: `10`.
 
 ## Bonus
 
 The bonus are a plus that help us to know you better and increments your final score.
 
-- Automated Test for second AC: `10`.
-- Automated Test for third AC: `10`.
-- Automated Test for fourth AC: `10`.
-- Automated Test for fifth AC: `10`.
+- Authentication with real backend (like Firebase, Auth0, etc): `40`.
+- Add tests for update a note through the notes page UI: `10`.
+- Add tests for archive a note through the notes page UI: `10`.
+- Add a 404 page: `10`.
+- Add a test for 404 page: `10`.
+- Add Dark mode: `20`.
 - The app is responsive: `20`.
+- Persist data using a real backend service (like Firebase, etc): `50`.
 
 ## Questions?
 
