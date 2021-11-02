@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { MyDatePicker, DpInput } from "./DatePicker.styles";
+import { MyDatePicker, Input } from "./DatePicker.styles";
 import GlobalContext from "../../providers/GlobalContext";
 import { actions } from "../../utils/reducer/actions";
 import { parseISO, format } from "date-fns";
@@ -21,11 +21,7 @@ const DatePicker = () => {
 
   return (
     <MyDatePicker>
-      <DpInput
-        id="datepicker"
-        onChange={handleDateChange}
-        value={date}
-      ></DpInput>
+      <Input id="datepicker" onChange={handleDateChange} value={date}></Input>
     </MyDatePicker>
   );
 };

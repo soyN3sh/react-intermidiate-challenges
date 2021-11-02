@@ -14,7 +14,7 @@ const MyDatePicker = styled.div`
   }
 `;
 
-const DpInput = styled.input.attrs((props) => ({
+const Input = styled.input.attrs((props) => ({
   type: "date",
 }))`
   float: left;
@@ -22,22 +22,14 @@ const DpInput = styled.input.attrs((props) => ({
   height: 35px;
   overflow: hidden;
   border-radius: 20px;
-
-  input:focus {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  :focus {
     outline: none;
-  }
-
-  input {
-    width: 125%;
-    background: #f5f5f5;
-    border: none;
-    height: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 11px;
-    cursor: pointer;
   }
 `;
 
-export { MyDatePicker, DpInput };
+export { MyDatePicker, Input };

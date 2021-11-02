@@ -94,7 +94,11 @@ describe("App tests", () => {
       render(<AppWithContext state={tmpState} dispatch={mockDispatch} />);
     }).then(() => {
       const errorMessage = document.querySelector("#errorMessage");
+      const message = screen.getByText(
+        /No api_key was supplied. Get one at https/i
+      );
       expect(errorMessage).toBeInTheDocument();
+      expect(message).toBeInTheDocument();
       done();
     });
   });
