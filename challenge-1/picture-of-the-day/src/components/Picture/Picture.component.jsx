@@ -7,6 +7,7 @@ import {
   CustomParagraph,
   CustomError,
 } from "./Picture.styles";
+import FoldingCube from "../FoldingCube/FoldingCube.component";
 import GlobalContext from "../../providers/GlobalContext";
 import useData from "../../utils/hooks/useData";
 
@@ -29,7 +30,7 @@ const Picture = () => {
       <CustomParagraph>{data.explanation}</CustomParagraph>
     </PictureContainer>
   ) : (
-    "loading..."
+    <FoldingCube />
   );
 };
 
